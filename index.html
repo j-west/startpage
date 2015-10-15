@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color:DarkSlateGrey">
+
+<body>
+	<div id="time">
+		<script type="text/javascript">
+		var currentTime = new Date()
+		var hours = currentTime.getHours()
+		var minutes = currentTime.getMinutes()
+
+		if (minutes < 10)
+			minutes = "0" + minutes
+		var suffix = "AM";
+		if (hours >= 12) {
+			suffix = "PM";
+			hours = hours - 12;
+		}
+		if (hours == 0) {
+			hours = 12;
+		}
+		document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>")
+		</script>
+		<br>
+		<script type="text/javascript">
+		var currentDate = new Date()
+		var day = currentDate.getDate()
+		var month = currentDate.getMonth() + 1
+		var year = currentDate.getFullYear()
+		document.write("<b>" + day + "/" + month + "/" + year + "</b>")
+		</script>
+	</div>
+	<div class="books">
+		<a href="https://geekhack.org/">geekhack</a><br>		
+		<a href="http://deskthority.net">deskthority</a><br>
+		<a href="http://www.computerhope.com/jargon/program.htm">jargon</a><br>
+		<a href="http://wallhaven.cc">wallhaven</a><br>
+		<a href="http://forums.mydigitallife.info/forum.php">mdl</a><br>
+		<a href="http://store.steampowered.com/">steam</a><br>
+		<a href="http://nofilmschool.com/">no film school</a><br>
+	</div>
+	<div class="books2">
+		<a href="https://www.facebook.com/">facebook</a><br>
+		<a href="http://www.reddit.com/">reddit</a><br>
+		<a href="https://stacksity.com/">stacksity</a><br>
+		<a href="http://www.youtube.com/">youtube</a><br>		
+		<a href="https://drive.google.com/">google drive</a><br>
+		<a href="http://getpocket.com/a/queue/">pocket</a><br>
+		<a href="http://letterboxd.com/">letterboxd</a><br>
+	</div>
+	<img class="line" src="line.png">
+</body>
+</html>
+
+
